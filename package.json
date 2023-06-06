@@ -1,7 +1,7 @@
 {
-  "name": "vite-react-ts-minimal-template",
+  "name": "eshop-template",
   "private": true,
-  "version": "0.0.0",
+  "version": "0.1.0",
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
@@ -13,8 +13,12 @@
     "prepare": "husky install"
   },
   "dependencies": {
+    "antd": "^5.5.2",
+    "jotai": "^2.1.1",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^6.11.2",
+    "stitches": "^1.2.11"
   },
   "devDependencies": {
     "@types/react": "^18.0.17",
