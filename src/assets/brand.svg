@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="300"
+   height="91"
+   viewBox="0 0 300 91"
+   version="1.1"
+   id="svg5"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview7"
+     pagecolor="#505050"
+     bordercolor="#eeeeee"
+     borderopacity="1"
+     inkscape:showpageshadow="0"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#505050"
+     inkscape:document-units="px"
+     showgrid="false" />
+  <defs
+     id="defs2">
+    <rect
+       x="-0.3185887"
+       y="0.060757399"
+       width="302.62393"
+       height="150.41005"
+       id="rect1516" />
+    <filter
+       inkscape:label="Black Hole"
+       inkscape:menu="Morphology"
+       inkscape:menu-tooltip="Creates a black light inside and outside"
+       height="1.8716877"
+       width="1.1927228"
+       y="-0.4358438"
+       x="-0.096361406"
+       style="color-interpolation-filters:sRGB"
+       id="filter1610">
+      <feGaussianBlur
+         stdDeviation="5"
+         in="SourceAlpha"
+         result="result1"
+         id="feGaussianBlur1598" />
+      <feComposite
+         operator="arithmetic"
+         k2="3.2"
+         k1="-1"
+         k4="-2"
+         result="result3"
+         in2="result1"
+         id="feComposite1600"
+         k3="0" />
+      <feColorMatrix
+         values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 10 0 "
+         result="result2"
+         id="feColorMatrix1602" />
+      <feComposite
+         result="fbSourceGraphic"
+         in="SourceGraphic"
+         operator="out"
+         in2="result2"
+         id="feComposite1604" />
+      <feBlend
+         mode="multiply"
+         in="result1"
+         in2="fbSourceGraphic"
+         result="result91"
+         id="feBlend1606" />
+      <feBlend
+         mode="screen"
+         in="fbSourceGraphic"
+         in2="result91"
+         id="feBlend1608" />
+    </filter>
+  </defs>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <text
+       xml:space="preserve"
+       id="text1514"
+       style="font-style:normal;font-weight:normal;font-size:40px;line-height:1.25;font-family:sans-serif;white-space:pre;shape-inside:url(#rect1516);fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-opacity:1;filter:url(#filter1610)"
+       transform="matrix(1.9444917,0,0,1.6753379,17.114315,9.386396)"><tspan
+         x="-0.31835938"
+         y="36.455554"
+         id="tspan1864">BRAND</tspan></text>
+  </g>
+</svg>
