@@ -1,6 +1,6 @@
 import { useAtomValue } from 'jotai';
-import { generateLorem } from 'src/assets/utils';
 import { siteLanguageAtom } from '.';
+import { generateLorem } from '../utils';
 
 type ContactFormField = {
   label: string;
