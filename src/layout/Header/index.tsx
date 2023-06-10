@@ -24,7 +24,9 @@ const StyledHeader = customStyled('header', {
   width: '100%',
   padding: 5,
 
-  // border: '2px solid gray',
+  'div.ant-row': {
+    position: 'relative',
+  },
 
   '.desktop-only': {
     display: 'none',
@@ -33,20 +35,33 @@ const StyledHeader = customStyled('header', {
       display: 'flex',
     },
   },
+
+  '.header-right-side': {
+    display: 'flex',
+    paddingTop: 10,
+
+    '@lg': {
+      paddingTop: 5,
+    },
+  },
 });
 
 export default function Header(): JSX.Element {
   return (
     <StyledHeader>
-      <Row>
-        <ToggleButtonForShopSectionsDrawer />
-        <ShopLogobrand />
-        <ProductSearchbar />
-        <div className="desktop-only">
-          <ClientAccountPageLink />
-          <ToggleButtonForShopLanguageDrawer />
+      <Row justify="space-between">
+        <div className="header-left-side">
+          <ToggleButtonForShopSectionsDrawer />
         </div>
-        <ShoppingCartLink />
+        <ShopLogobrand />
+        <div className="header-right-side">
+          <ProductSearchbar />
+          <div className="desktop-only">
+            <ClientAccountPageLink />
+            <ToggleButtonForShopLanguageDrawer />
+          </div>
+          <ShoppingCartLink />
+        </div>
       </Row>
     </StyledHeader>
   );
