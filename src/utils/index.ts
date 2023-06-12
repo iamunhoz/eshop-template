@@ -64,3 +64,9 @@ export function handleVisitationAnalytics() {
   console.log(`Webdriver: ${navigator.webdriver}`);
   console.log(`Geolocation: ${navigator.geolocation}`);
 }
+
+export function wait(duration: number) {
+  return new Promise((resolve) => {
+    setTimeout(resolve, duration);
+  });
+}
