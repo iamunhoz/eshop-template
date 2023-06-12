@@ -10,12 +10,6 @@ export type ProductFake = {
   subcategory: string;
 };
 
-export type ProductFilter = Record<ProductFilterKeys, string | number>;
-/* {
-  minPrice: number;
-  maxPrice: number;
-} & Pick<ProductFake, 'name' | 'category' | 'subcategory'>;
- */
 export type ProductFilterKeys =
   | 'name'
   | 'category'
@@ -23,7 +17,9 @@ export type ProductFilterKeys =
   | 'minPrice'
   | 'maxPrice';
 
-const filtersAvailable: ProductFilterKeys[] = [
+export type ProductFilter = Record<ProductFilterKeys, string | number>;
+
+export const filtersAvailable: ProductFilterKeys[] = [
   'name',
   'category',
   'subcategory',
@@ -95,7 +91,7 @@ const worker = setupWorker(
     });
 
     return res(
-      ctx.delay(1500),
+      ctx.delay(2500),
       ctx.status(202, 'Mocked status'),
       ctx.json(filterProducts(0, 10, filters)),
     );

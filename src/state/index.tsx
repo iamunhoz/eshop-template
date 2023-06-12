@@ -1,4 +1,5 @@
 import { atom } from 'jotai';
+import { ProductFilter } from '../api/mock-data';
 
 const enum ETheme {
   dark = 'dark',
@@ -11,4 +12,12 @@ const borderAtom = atom<'with' | 'without'>('without');
 
 const siteLanguageAtom = atom<'pt' | 'en'>('en');
 
-export { themeAtom, ETheme, siteLanguageAtom, borderAtom };
+const productListFiltersAtom = atom<Partial<ProductFilter>>({});
+
+export {
+  themeAtom,
+  ETheme,
+  siteLanguageAtom,
+  borderAtom,
+  productListFiltersAtom,
+};
